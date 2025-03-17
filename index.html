@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting Started with Three.js</title>
-    <style>
-      body {
-        margin: 0;
-      }
-    </style>
+    <title>Watch Holder</title>
     <script type="importmap">
-			{
-				"imports": {
-					"three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
           "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
         }
-			}
-		</script>
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <script type="module" src="script.js"></script>
+    <b>Select Color</b>
+    <div class="palette">
+      <div class="color-box" style="background-color: #e60000;" data-color="#e60000"></div>
+      <div class="color-box" style="background-color: #66ff33;" data-color="#66ff33"></div>
+      <div class="color-box" style="background-color: #3399ff;" data-color="#3399ff"></div>
+      <div class="color-box" style="background-color: #e6e600;" data-color="#e6e600"></div>
+      <div class="color-box" style="background-color: #cc0099;" data-color="#cc0099"></div>
+      <div class="color-box" style="background-color: #ff9900;" data-color="#ff9900"></div>
+      <div class="color-box" style="background-color: #ffffff;" data-color="#ffffff"></div>
+    </div>
   </body>
 </html>
