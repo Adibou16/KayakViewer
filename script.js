@@ -74,15 +74,15 @@ directionalLight.position.set(5, 10, 7.5); // Position the light
 scene.add(directionalLight);
 
 // Add event listener for the color picker
-const colorBoxes = document.querySelectorAll('.color-box');
-const target = document.getElementById('target');
+const colorSelect = document.getElementById('color');
 
-colorBoxes.forEach(box => {
-  box.addEventListener('click', () => {
-    const color = box.dataset.color;
+
+colorSelect.addEventListener("change", (event) => {
+    const color = colorSelect.value;
     modelMaterial.color.set(color);
-  });
+    colorSelect.style.backgroundColor = color;
 });
+
 
 // Set up the animation loop
 function animate() {

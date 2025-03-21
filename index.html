@@ -16,15 +16,26 @@
   </head>
   <body>
     <script type="module" src="script.js"></script>
-    <b>Select Color</b>
-    <div class="palette">
-      <div class="color-box" style="background-color: #e60000;" data-color="#e60000"></div>
-      <div class="color-box" style="background-color: #66ff33;" data-color="#66ff33"></div>
-      <div class="color-box" style="background-color: #3399ff;" data-color="#3399ff"></div>
-      <div class="color-box" style="background-color: #e6e600;" data-color="#e6e600"></div>
-      <div class="color-box" style="background-color: #cc0099;" data-color="#cc0099"></div>
-      <div class="color-box" style="background-color: #ff9900;" data-color="#ff9900"></div>
-      <div class="color-box" style="background-color: #ffffff;" data-color="#ffffff"></div>
-    </div>
+    <label for="color">Select Color:</label>
+    <select name="color" id="color">
+      <option value="#ffffff" style="background-color: #ffffff;" class="color-box">White</option>
+      <option value="#e60000" style="background-color: #e60000;" class="color-box" >Red</option>
+      <option value="#66ff33" style="background-color: #66ff33;" class="color-box">Green</option>
+      <option value="#3399ff" style="background-color: #3399ff;" class="color-box">Blue</option>
+      <option value="#e6e600" style="background-color: #e6e600;" class="color-box">Yellow</option>
+      <option value="#cc0099" style="background-color: #cc0099;" class="color-box">Purple</option>
+      <option value="#ff9900" style="background-color: #ff9900;" class="color-box">Orange</option>
+    </select>
   </body>
 </html>
+
+<!-- <b>Select Color</b>
+<div class="palette">
+  <div class="color-box" style="background-color: #e60000;" data-color="#e60000"></div>
+  <div class="color-box" style="background-color: #66ff33;" data-color="#66ff33"></div>
+  <div class="color-box" style="background-color: #3399ff;" data-color="#3399ff"></div>
+  <div class="color-box" style="background-color: #e6e600;" data-color="#e6e600"></div>
+  <div class="color-box" style="background-color: #cc0099;" data-color="#cc0099"></div>
+  <div class="color-box" style="background-color: #ff9900;" data-color="#ff9900"></div>
+  <div class="color-box" style="background-color: #ffffff;" data-color="#ffffff"></div>
+</div> -->
